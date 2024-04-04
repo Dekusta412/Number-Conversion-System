@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Conversion System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="profile-header">
+        <img class="profile-picture" src="profile.png" alt="Profile Picture">
+        <div class="profile-info">
+            <h1>Dexter Dela Riarte</h1>
+            <p>
+              BSIT - I | CS132 | G4
+            </p>
+        </div>
+    </div>
+    <div class="convert-container">
+      <h1>Number Conversion System</h1>
+      <div class="convert">
+        <div class="convert-from">
+          <label for="from">From:</label>
+          <select class="choice-from" id="from">
+              <option value="decimal">Decimal</option>
+              <option value="binary">Binary</option>
+              <option value="hexadecimal">Hexadecimal</option>
+              <option value="octal">Octal</option>
+          </select>
+        </div>
+        <div class="convert-to">
+          <label for="to">To:</label>
+          <select class="choice-to" id="to">
+              <option value="decimal">Decimal</option>
+              <option value="binary">Binary</option>
+              <option value="hexadecimal">Hexadecimal</option>
+              <option value="octal">Octal</option>
+          </select>
+        </div>
+      </div>
+      <div class="enter-number">
+        <div class="number">
+          <label for="number">Enter a Number:</label>
+          <input class="input-number" type="text" id="number">
+        </div>
+      </div>
+      <div class="result-container">
+        <div>
+          <button class="convert-button" onclick="convert()">Convert</button>
+        </div>
+        <div class="result-box">
+          <div style="margin-top: 9px;
+          ">Result:</div>
+          <div class="result">
+            <div class="answer" id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
